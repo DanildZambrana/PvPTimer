@@ -23,11 +23,7 @@ public class CooldownImpl implements Cooldown {
         }
 
         long cooldown = cooldownMap.get(id);
-        if ((cooldown - System.currentTimeMillis()) > 0) {
-            cooldownMap.remove(id);
-            return true;
-        }
-        return false;
+        return (cooldown - System.currentTimeMillis()) > 0;
     }
 
 

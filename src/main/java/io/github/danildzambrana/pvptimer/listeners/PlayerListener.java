@@ -70,7 +70,7 @@ public class PlayerListener implements Listener {
                     config.getColouredString("lang.target-has-pvp-timer",
                             new SimpleEntry<>("%target%", player.getName()),
                             new SimpleEntry<>("%target-displayName%", player.getDisplayName()),
-                            new SimpleEntry<>("%time%", cooldown.getCooldown(player.getUniqueId()) + "")
+                            new SimpleEntry<>("%time%", (cooldown.getCooldown(player.getUniqueId()) / 1000) + "")
                     )
             );
         }
@@ -79,7 +79,7 @@ public class PlayerListener implements Listener {
             event.setCancelled(true);
             playerDamager.sendMessage(
                     config.getColouredString("lang.cannot-attack",
-                            new SimpleEntry<>("%time%", cooldown.getCooldown(player.getUniqueId()) + "")
+                            new SimpleEntry<>("%time%", (cooldown.getCooldown(playerDamager.getUniqueId()) / 1000) + "")
                     )
             );
         }

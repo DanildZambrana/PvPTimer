@@ -21,15 +21,15 @@ permissions:
     default: op
   pvptimer.check:
     description: access to check sub command.
-      default: op
+    default: op
   pvptimer.grant:
     description: access to grant sub command.
-      default: op
+    default: op
   pvptimer.reset:
     description: access to reset sub command.
-      default: op
+    default: op
 
 commands:
   pvptimer:
     description: Main command of pvp timer
-    usage: /pvptimer <enable:check:reset:grant>
+    usage: /pvptimer <enable|check|reset|grant>
