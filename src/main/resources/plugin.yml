@@ -1,0 +1,35 @@
+name: PvPTimer
+version: ${project.version}
+main: io.github.danildzambrana.pvptimer.PvPTimer
+prefix: PvPTimer
+authors: [ DanildZambrana ]
+description: Only one pvp timer.
+website: github.com/DanildZambrana/PvPTimer
+
+permissions:
+  pvptimer.*:
+    description: pvptimer main perm
+    default: op
+    children:
+      pvptimer.enable: true
+      pvptimer.check: true
+      pvptimer.grant: true
+      pvptimer.reset: true
+
+  pvptimer.enable:
+    description: access to enable sub command.
+    default: op
+  pvptimer.check:
+    description: access to check sub command.
+      default: op
+  pvptimer.grant:
+    description: access to grant sub command.
+      default: op
+  pvptimer.reset:
+    description: access to reset sub command.
+      default: op
+
+commands:
+  pvptimer:
+    description: Main command of pvp timer
+    usage: /pvptimer <enable:check:reset:grant>

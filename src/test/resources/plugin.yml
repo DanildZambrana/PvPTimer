@@ -1,0 +1,19 @@
+name: PvPTimer
+version: 1
+main: io.github.danildzambrana.pvptimer.PvPTimerTest
+api-version: 1.16
+prefix: PvPTimer
+authors: [ DanildZambrana ]
+description: Only one pvp timer.
+website: github.com/DanildZambrana/PvPTimer
+
+permissions:
+  pvptimer.admin:
+    description: pvptimer main perm
+    default: op
+
+commands:
+  pvptimer:
+    description: Main command of pvp timer
+    usage: /pvptimer <enable:check:reset:grant>
+    permission: pvptimer.admin

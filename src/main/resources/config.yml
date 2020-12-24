@@ -1,0 +1,52 @@
+# Time to player pvp timer in seconds
+pvp-time: 60
+
+# Lang config
+lang:
+  no-permission: "You dont have permission to this"
+  enable-pvp: "&cSuccessfully enable your &4&lPvP&c."
+
+  enable-pvp-others:
+    # %from% = The player name enable the pvp.
+    # %from-displayname% = The diplay name of the player enable the pvp.
+    target: "Your pvp has been enabled by %from%"
+
+    # %target% = the name of target player
+    sender: "The pvp of %target% has been enabled"
+
+  # %target% = the player target of the command.
+  # %time% = the remaining time of cooldown pvp.
+  check-remaining-cooldown: "The remaining time of %target% is %time%"
+
+  grant:
+    # %from% = The player name enable the pvp.
+    # %from-displayname% = The diplay name of the player enable the pvp.
+    target: "your cooldown has been granted by %from%"
+
+    # %target% = the name of target player
+    # %target_displayname% = The display name of the target.
+    sender: "The pvp of %target% has been granted"
+
+  reset:
+    # %from% = The player name enable the pvp.
+    # %from-displayname% = The diplay name of the player enable the pvp.
+    target: "your cooldown has been reset by %from%"
+
+    # %target% = the name of target player
+    # %target_displayname% = The display name of the target.
+    sender: "The cooldown of %target% has been reset."
+
+  # %usage% = the correct usage of the command.
+  bad-command-usage: "Bad usage. &a%usage%"
+
+  target-offline: "The target %target% is offline"
+
+  console-sender: "This command can't be executed by console"
+
+  # %target-displayName% = Player display name
+  # %target% = Player name.
+  # %time% = time remaining of cooldown.
+  target-has-pvp-timer: "&c%target% has their &a&lPvP Timer &cfor another &l[%time% minutes]&c."
+
+  # %time% = remaining time of cooldown.
+  cannot-attack: "&cYou cannot attack players whilst your &a&lPvP Timer &cis active &c[%time% minutes remaining] use '&6/pvp on&c' to allow pvp&c."
